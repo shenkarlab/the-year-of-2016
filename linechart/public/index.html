@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>The Year of MEH</title>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.0-beta/Chart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+     <div id="wrapper">
+     <main>
+          <section ng-controller="lineCtrl" id="page4">
+            <tbody>
+            <canvas id="lineChart" width="400" height="400"></canvas>
+           <!--  <span ng-repeat="line in terror">
+                {{line.date}}
+                {{line.num}}
+             </span>
+             -->
+            </tbody>
+          </section>
+    </main>
+         <div class="clear"></div>
+    <footer>
+    </footer>
+     </div> 
+    <script src="angular.min.js"></script>
+    <script src="angular-resource.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="controller.js"></script>
+  </body>
+ </html>
