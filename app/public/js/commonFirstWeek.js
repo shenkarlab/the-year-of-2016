@@ -1,6 +1,7 @@
 var firstWeek = angular.module('MEH',['ngRoute']);
 
 
+<<<<<<< HEAD
 firstWeek.controller('commonCtrl',['$scope','$http', function($scope,$http) {
   
   
@@ -756,3 +757,23 @@ firstWeek.controller('lineCtrl',['$scope','$http',function($scope,$http) {
 
 
 }]);
+=======
+firstWeek.controller('commonCtrl',['$scope','$http',function($scope,$http) {
+    $http.get("https://year2016.herokuapp.com/commonFirstWeek").success(function(data){
+        $scope.commonFirstWeek = data; 
+        console.log(data);
+   });
+    $http.get("https://year2016.herokuapp.com/commyear").success(function(data){
+        $scope.commonYear = data; 
+        console.log(data);
+   });
+    $http.get("https://year2016.herokuapp.com/commonSecondtWeek").success(function(data){
+        $scope.secondWeek = data; 
+        console.log(data);
+   });
+}]);
+
+
+
+
+>>>>>>> c1df8107d975d0d7ba838faf4d3ed5dfd299c878

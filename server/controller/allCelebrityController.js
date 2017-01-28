@@ -12,6 +12,22 @@ exports.getData = function(req, res){
         if (err){
               throw err;
         }
+<<<<<<< HEAD
+=======
+
+      function sortByFirstName(a, b) {
+          var sortStatus = 0;
+       
+          if (a.date < b.date) {
+              sortStatus = -1;
+          } else if (a.date > b.date) {
+                  sortStatus = 1;
+          }
+          return sortStatus;
+      }
+
+      docs.sort(sortByFirstName);
+>>>>>>> c1df8107d975d0d7ba838faf4d3ed5dfd299c878
   
      t1 = docs; 
 
@@ -19,6 +35,7 @@ exports.getData = function(req, res){
             if (err){
                   throw err;
             }
+<<<<<<< HEAD
    
      t2 = docs; 
 
@@ -27,26 +44,45 @@ exports.getData = function(req, res){
                   throw err;
             }
    
+=======
+    docs.sort(sortByFirstName); 
+     t2 = docs; 
+
+      allCelebrity.find({topic:'alan rickman'},function(error, docs){
+            if (err){
+                  throw err;
+            }
+   docs.sort(sortByFirstName);
+>>>>>>> c1df8107d975d0d7ba838faf4d3ed5dfd299c878
      t3 = docs;
 
      allCelebrity.find({topic:'mohammad ali'},function(error, docs){
             if (err){
                   throw err;
             }
+<<<<<<< HEAD
    
+=======
+   docs.sort(sortByFirstName);
+>>>>>>> c1df8107d975d0d7ba838faf4d3ed5dfd299c878
      t4 = docs;
 
       allCelebrity.find({topic:'fidel castro'},function(error, docs){
             if (err){
                   throw err;
             }
+<<<<<<< HEAD
    
+=======
+   docs.sort(sortByFirstName);
+>>>>>>> c1df8107d975d0d7ba838faf4d3ed5dfd299c878
      t5 = docs;
 
       allCelebrity.find({topic:'carrie fisher'},function(error, docs){
             if (err){
                   throw err;
             }
+<<<<<<< HEAD
    
      t6 = docs;
 
@@ -55,6 +91,16 @@ exports.getData = function(req, res){
                   throw err;
             }
    
+=======
+   docs.sort(sortByFirstName);
+     t6 = docs;
+
+      allCelebrity.find({topic:'debby reynolds'},function(error, docs){
+            if (err){
+                  throw err;
+            }
+   docs.sort(sortByFirstName);
+>>>>>>> c1df8107d975d0d7ba838faf4d3ed5dfd299c878
      t7 = docs;
 
 

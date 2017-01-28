@@ -6,8 +6,14 @@ var glob = require('glob');
 
 
 exports.saveData = function(req, res){
+<<<<<<< HEAD
 /* glob("localDocs/graphs/*", function(err, files) {
     for(var i=9; i<10; i++){
+=======
+ glob("localDocs/graphs/*", function(err, files) {
+    for(var i=9; i<10; i++){
+
+>>>>>>> c1df8107d975d0d7ba838faf4d3ed5dfd299c878
         var content = fs.readFileSync(files[i]);
         var jsonContent = JSON.parse(content);
     
@@ -41,7 +47,11 @@ exports.saveData = function(req, res){
                     var saveDoc = new graphData({
                     topic: myTopic,
                     date: date,
+<<<<<<< HEAD
                     count: count,
+=======
+                    num: count,
+>>>>>>> c1df8107d975d0d7ba838faf4d3ed5dfd299c878
                     });
 
                     saveDoc.save(function(err, res){
@@ -60,7 +70,11 @@ exports.saveData = function(req, res){
 
     }
 });
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> c1df8107d975d0d7ba838faf4d3ed5dfd299c878
 var jsonEvent;
     glob("localDocs/top50/*", function(err, files){
         for(var j=0; j<files.length; j++){
@@ -110,4 +124,8 @@ var jsonEvent;
         }
     }
     });
+<<<<<<< HEAD
+=======
+    
+>>>>>>> c1df8107d975d0d7ba838faf4d3ed5dfd299c878
 }

@@ -1,0 +1,74 @@
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+@import url(http://markmurray.co/codepen/entypostyle.css);
+
+$font:   'Roboto', sans-serif;
+$weight: 100;
+$colors: #3498db, #1abc9c, #9b59b6, #e74c3c, #e67e22;
+
+body {
+  background: #8e8e8e;
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+}
+
+section {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   left: 0; top: 0;
+   display: table;
+   overflow: hidden;
+   z-index: 1;
+  
+  .content {
+     text-align: center;
+     display: table-cell;
+     vertical-align: middle;
+     color: white;
+     padding: 20px;
+     font-size: 5rem;
+     line-height: 50px;
+     font-family: $font;
+     font-weight: $weight;
+    
+     h1 {
+       font-size: 3rem; 
+       font-family: $font;
+       font-weight: $weight;
+       margin-top: 50px;
+    }
+    
+    .arrow {
+        font-size: 2rem;
+        line-height: 0.5;
+        padding: 10px;
+        @include border-radius(8px);
+    }
+  }
+}
+
+.section1 {
+  background: nth($colors, 1);
+  top:0;
+}
+.section2 {
+  background: nth($colors, 2);
+  top:100%;
+}
+.section3 {
+  background: nth($colors, 3);
+  top:200%;
+}
+
+.section4 {
+  background: nth($colors, 4);
+  top: 300%;
+}
+
+.section5 {
+  background: nth($colors, 5);
+  top: 400%;
+}
