@@ -28,7 +28,7 @@ body
 }
 #page1
 {
-    min-height: 800px;
+    min-height: 1000px;
     background-image: url("../images/Introimage.png");
     width: 100%;
     background-size: cover;
@@ -84,7 +84,7 @@ body
     text-align: center;
     font-weight: normal;
     letter-spacing: 0px;
-    margin-top: 435px;
+    margin-top: 610px;
 }
 .arrow
 {
@@ -109,7 +109,7 @@ body
 }
 #page2
 {
-    min-height: 700px;
+    min-height: 1000px;
     background-color: #19181e;
     width: 100%;
     background-size: cover;
@@ -152,6 +152,7 @@ body
     letter-spacing: 0px;
     text-align: center;
     width:100%;
+    margin-top: 240px;
 }
 
 .page2Intro2
@@ -165,7 +166,7 @@ body
 }
 #page3
 {
-    min-height: 800px;
+    min-height: 1000px;
     background-image: url("../images/Depression.png");
     background-color: #19181e;
     width: 100%;
@@ -231,7 +232,7 @@ body
 }
 #page4
 {
-    min-height: 800px;
+    min-height: 1000px;
     background-color: #19181e;
 }
 #headLine
@@ -280,7 +281,7 @@ body
 }
 #page5
 {
-   min-height: 920px;
+   min-height: 1100px;
     background-color: #19181e;
 }
 #line8
@@ -332,7 +333,7 @@ body
 }
 #page6
 {
-    min-height: 800px;
+    min-height: 1000px;
     background-color: #19181e;
 }
 #side2
@@ -753,4 +754,12 @@ width: 20%;
 #side2 {
 	margin-left: 60px;
 }
+}
+
+@media screen and (max-width:1000px) {
+
+.timeLine {
+	display: none;
+}
+	
 }

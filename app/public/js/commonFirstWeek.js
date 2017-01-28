@@ -67,10 +67,17 @@ firstWeek.controller('lineCtrl',['$scope','$http',function($scope,$http) {
             }],
               xAxes: [
             {
-            display: false
+            display: false,
+          
+            
             }
             
             ]
+        },
+        
+         title: {
+            display: true,
+            text: 'Terror'
         }
     }
   });
