@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html ng-app="MEH">
+  <head>
+    <title>The Year of MEH</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<meta charset= "UTF-8">    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.0-beta/Chart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+     <div id="wrapper">
+     <main>
+          <section id="page1">
+          <section id="line"></section>
+             <div class="logoContainer"><a href="index.html" class="logo"> </a></div>
+             <p id="pageOneTitle">The year 2016 in<br>
+                somber retrospective
+             </p>
+             <h1 class="scroll">Scroll for clinical depression</h1>
+             <img src="images/Downarrow.svg" alt="arrow" class="arrow" onclick="scrollTo ('page2')">
+          </section> 
+          <section id="page2">
+            <section class="SeperateLinePink" id="line2"></section>
+            <section class="SeperateLineGrey" id="line3"></section>
+             <div class="logoContainer"> <a href="index.html" class="logo"> </a></div>
+            <section class = "col-6">
+            <p class="page2Intro">
+              You've heard it before, how 2016 was a terrible,<br>
+              awful year. It's been called that countless times in the media.<br><br>
+              But let's dig deeper: when, how and why did we<br>
+              come to this conclusion? When did we lose hope,<br>
+              if we even had any to begin with?<br><br>
+              Or imply put, what about 2016 was so <span id="diff">MEH</span>.
+            </p>
+			</section>
+			<section class = "col-6">
+             <p class="page2Intro2"> 
+              Featuring data from the New York Times, Fox News,<br>
+              Washington Post, and more, collected and aggregated by<br>
+              MediaCloud<br><br>
+              Powered by shattered hopes and tears.
+             </p>
+             </section>
+             <div class="clear"></div>
+             <h1 id="scroll2">We're getting to it</h1>
+             <img src="images/Downarrow.svg" alt="arrow" class="arrow" onclick="scrollTo ('page3')">
+             
+          </section>
+          <section id="page3">
+            <section class="SeperateLinePink" id="line4"></section>
+            <section class="SeperateLineGrey" id="line5"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h1 id="chap1">Chapter 1:</h1>
+            <h2 id="chap1Sec">Abandon all hope.</h2>
+            <p id="P1">Were we off to a bad start?</p>
+          </section> 
+          <section ng-controller="commonCtrl" id="page4">
+          	
+            <section class="SeperateLinePink" id="line6"></section>
+            <section class="SeperateLineGrey" id="line7"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <section class = "col-6">
+            
+            <h2 id="headLine">Abandon all hope.</h2>
+            <p id="P2">
+              For the first week of January, we had our hopes up, it seems.<br>
+              Interestingly, many positive words ranked fairly high, maybe<br>
+              suggesting a glimmer of hope for the upcoming year?
+            </p>
+            </section>
+            <section class = "col-6">
+            <section class="wordCloud">
+             <span ng-repeat="first in commonFirstWeek | limitTo:4:0" ng-class="first.name"  ng-style = "page4marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+              <span ng-repeat="first in commonFirstWeek | limitTo:3:4" ng-class="first.name" ng-style = " page4marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span ng-repeat="first in commonFirstWeek | limitTo:5:9" ng-class="first.name" ng-style = " page4marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:4:14" ng-class="first.name" ng-style = " page4marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:5:18" ng-class="first.name" ng-style = " page4marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:5:23" ng-class="first.name" ng-style = " page4marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:6:29" ng-class="first.name" ng-style = " page4marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:6:35" ng-class="first.name" ng-style = " page4marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:7:43" ng-class="first.name" ng-style = " page4marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+            
+            </section>
+            <p id="side">
+              Word frequency (sampled),<br>
+              January 1 — January 7
+            </p>
+            
+            </section>
+            <div class="clear"></div>
+          </section>
+            <section ng-controller="commonCtrl" id="page5">
+            <section class="SeperateLinePink" id="line8"></section>
+            <section class="SeperateLineGrey" id="line9"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <section class = "col-6">
+            
+            <h2 id="headLine">Abandon all hope.</h2>
+            <p id="P3">
+              For the first week of January, we<br>
+              had our hopes up, it seems.<br>
+              Interestingly, many positive words ranked fairly high, maybe<br>
+              suggesting a glimmer of hope for<br>
+              the upcoming year?
+            </p>
+            
+            
+                        <p id="P4">
+              Also, Donald Trump ranks very high
+              here. This is very symptomatic of<br>
+              2016 in general, but perhaps
+              tellingly, Hillary Clinton is far below<br>
+              him on this list. We'll discuss this in
+              greater detail at a later<br> chapter.
+            </p>
+            </section>
+            <section class = "col-6">
+
+
+            <section class="wordCloud">
+             <span id="l1" ng-repeat="first in commonFirstWeek | limitTo:4:0" ng-class="first.name" ng-style = "page5marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+              <span id="l2" ng-repeat="first in commonFirstWeek | limitTo:3:4" ng-class="first.name" ng-style = "page5marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span id="l3" ng-repeat="first in commonFirstWeek | limitTo:5:9" ng-class="first.name" ng-style = "page5marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span id="l4" ng-repeat="first in commonFirstWeek | limitTo:4:14" ng-class="first.name" ng-style = "page5marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span id="l5" ng-repeat="first in commonFirstWeek | limitTo:5:18" ng-class="first.name" ng-style = "page5marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span id="l6" ng-repeat="first in commonFirstWeek | limitTo:4:23" ng-class="first.name" ng-style = "page5marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span id="l7" ng-repeat="first in commonFirstWeek | limitTo:6:29" ng-class="first.name" ng-style = "page5marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span id="l8" ng-repeat="first in commonFirstWeek | limitTo:6:35" ng-class="first.name" ng-style = "page5marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span id="l9" ng-repeat="first in commonFirstWeek | limitTo:7:43" ng-class="first.name" ng-style = "page5marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+            </section>
+                        <p id="side1">
+              Word frequency (sampled),<br>
+              January 1 — January 7
+            </p>
+            </section>
+          </section>
+          <section id="page6" ng-controller="commonCtrl">
+            <section class="SeperateLinePink" id="line10"></section>
+            <section class="SeperateLineGrey" id="line11"></section>
+            
+            
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h2 id="headLine">Abandon all hope.</h2>
+            <section class = "col-6">
+            <p id="P4">
+              As for the rest of the year, Donald Trump is the clear winner here,<br>
+              with the media talking about almost nothing except him, and (to a<br>
+              much lesser extent), his opponents Clinton and Sanders.
+            </p>
+            <p id="P4">
+              Also very differently from the first week of January, love is not<br>
+              represented, barely any positive terms stand out. But was media<br>
+              coverage truly so grim? Let's find out.
+            </p>
+            </section>
+            <section class = "col-6">
+
+                         
+            <section class="wordCloud">
+            	<span ng-repeat="first in commonYear | limitTo:3:0" ng-class="first.name" ng-style = "page6marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+              <span ng-repeat="first in commonYear | limitTo:4:3" ng-class="first.name" ng-style = "page6marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span ng-repeat="first in commonYear | limitTo:4:7" ng-class="first.name" ng-style = "page6marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+                    <span ng-repeat="first in commonYear | limitTo:5:11" ng-class="first.name" ng-style = "page6marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+                    <span ng-repeat="first in commonYear | limitTo:3:16" ng-class="first.name" ng-style = "page6marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+                    <span ng-repeat="first in commonYear | limitTo:7:23" ng-class="first.name" ng-style = "page6marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+            </section>
+            
+             <p id="side2">
+              Word frequency (sampled),<br>
+              January 1 — December 31
+            </p>
+
+            </section>
+          </section>
+          <section id="page7">
+            <section class="SeperateLinePink" id="line12"></section>
+            <section class="SeperateLineGrey" id="line13"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h1 id="chap1">Chapter 2:</h1>
+            <h2 id="chap1Sec">Extreme edition.</h2>
+            <p id="P1">Terror, refugees and how we became very, very scared.</p>
+          </section>
+          
+                    <section class="page7part2" ng-controller="commonCtrl">
+            <section class="SeperateLinePink" id="line14"></section>
+            <section class="SeperateLineGrey" id="line15"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <section class = "col-6">
+            
+            
+            <h2 id="headLine">Extreme edition.</h2>
+            <p id="P1">Europe has experienced several deadly and tragic events of terror. <br>
+            	Those events were very much represented by the media <br>
+            	throughout the year. 
+            	It is no surprise of <br> 
+            	course that mentions of terror only spike when acts of terror occur in Europe, 
+            	but never<br> 
+            	anywhere else. Go team.
+            	</p>
+            	</section>
+            	<!-- terror chart code-->
+            	<div ng-controller="lineCtrl">
+
+            <canvas id="lineChart" width="400" height="100"></canvas>
+				</div>
+
+
+          </section>
+          
+          <section class="page7part2">
+            <section class="SeperateLinePink" id="line16"></section>
+            <section class="SeperateLineGrey" id="line17"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h2 id="headLine">Extreme edition.</h2>
+            <section class = "col-6">
+            <p id="P1">2016 also saw the continuation of the war in Syria. 
+            	Coverage was fairly steady throughout the year with spikes during specific events, 
+            	although the war was, overall, discussed at a fairly consistent rate. 
+            	Somehwat uncharacteristic of wars in which the west isn't directly involved... or is it?
+            	</p>
+            </section>	
+            	<!-- syria chart code-->
+            	<div ng-controller="lineCtrl">
+            		           
+            <canvas id="syriaLineChart" width="400" height="100"></canvas>
+
+				</div>
+
+
+          </section>
+          
+                    <section class="page7part2">
+            <section class="SeperateLinePink" id="line18"></section>
+            <section class="SeperateLineGrey" id="line19"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h2 id="headLine">Extreme edition.</h2>
+            <section class = "col-6">
+            <p id="P1">2016 also saw the continuation of the war in Syria. 
+            	Coverage was fairly steady throughout the year with spikes during specific events, 
+            	although the war was, overall, discussed at a fairly consistent rate. 
+            	Somehwat uncharacteristic of wars in which the west isn't directly involved... or is it?
+            	</p>
+            </section>
+            <section class = "col-6">
+            	<p id="P1">Foiled again! While the war in Syria was tragic, 
+            		it is strangely closely shadowed by, yes, 
+            		the refugee crisis that many countries, including Europe faced.
+            	</p>
+            	
+
+
+            </section>	
+            	
+            	<!-- syria chart code-->
+            	<div ng-controller="lineCtrl">
+            		           
+
+            <canvas id="syriaLineChart2" width="400" height="100"></canvas>
+
+				</div>
+
+
+          </section>
+         
+         
+         
+          <section id="page8">
+            <section class="SeperateLinePink" id="line20"></section>
+            <section class="SeperateLineGrey" id="line21"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h1 id="chap1">Chapter 3:</h1>
+            <h2 id="chap1Sec">Year of the obituary.</h2>
+            <p id="P1">Look up here, I'm in heaven.</p>
+          </section>
+          <section id="page9" ng-controller="commonCtrl">
+            <section class="SeperateLinePink" id="line22"></section>
+            <section class="SeperateLineGrey" id="line23"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <section class = "col-6">
+            <h2 id="headLine">Year of the obituary.</h2>
+            <p id="P4">
+              Let's look back at January,<br>
+              this time, the second week of January.<br>
+              A very frequent phrase for this period is none other than the (late)<br>
+              musician David Bowie, who for many decades ruled the charts.
+            </p>
+</section>
+             <section class = "col-6">
+
+			<section class="wordCloud">
+             <span ng-repeat="first in secondWeek | limitTo:4:0" ng-class="first.name" ng-style = "page9marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+              <span ng-repeat="first in secondWeek | limitTo:3:4" ng-class="first.name" ng-style = "page9marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span ng-repeat="first in secondWeek | limitTo:5:9" ng-class="first.name" ng-style = "page9marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span ng-repeat="first in secondWeek | limitTo:4:14" ng-class="first.name" ng-style = "page9marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span ng-repeat="first in secondWeek | limitTo:5:18" ng-class="first.name" ng-style = "page9marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span ng-repeat="first in secondWeek | limitTo:6:23" ng-class="first.name" ng-style = "page9marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+             <span ng-repeat="first in secondWeek | limitTo:4:31" ng-class="first.name" ng-style = "page9marked.indexOf(first.word)>-1 && {'color':'#ff44fd'} ">
+                {{first.word}}
+             </span><br>
+</section>
+            
+                        <p id="side">
+            	
+              Word frequency (sampled),<br>
+              January 7 — January 14
+            </p>
+            </section>
+          </section>
+          
+
+<section class="page7part2">
+            <section class="SeperateLinePink" id="line24"></section>
+            <section class="SeperateLineGrey" id="line25"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h2 id="headLine">Year of the obituary.</h2>
+            <section class = "col-6">
+            <p id="P1">The resulting media shockwave of Bowie's death caused a spike in the conversation around the death of celebrities, a spike from which the media did not recover fully.
+            	</p>
+            	
+            	<p id="P1" style="font-size: 20px; font-style: italic; margin-top:100px;">
+            	
+              Word frequency (sampled),<br>
+              January 7 — January 14
+            </p>
+            </section>	
+            	<!-- david bowie chart code-->
+            	<div ng-controller="lineCtrl">
+            		          
+            <canvas id="obituaryDavid" width="400" height="100"></canvas>
+
+
+     
+				</div>
+
+
+          </section>
+          
+          
+          <section class="page7part2">
+            <section class="SeperateLinePink" id="line26"></section>
+            <section class="SeperateLineGrey" id="line27"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h2 id="headLine">Year of the obituary.</h2>
+            <p id="P1">Another tragic loss was Prince. Again, this sparked a conversation around the death of celebrities.
+            	</p>
+            	<p id="P1" style="font-size: 20px; font-style: italic; margin-top:100px;">
+            	
+              Sentences / week, <br>
+			  April 7 — April 25
+            </p>
+            	
+            	<!-- prince chart code-->
+            	<div ng-controller="lineCtrl">
+            		           
+            <canvas id="obituaryPrince" width="400" height="100"></canvas> 
+				</div>
+          </section>
+          
+                    <section class="page7part2">
+            <section class="SeperateLinePink" id="line28"></section>
+            <section class="SeperateLineGrey" id="line29"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h2 id="headLine">Year of the obituary.</h2>
+            
+            <p id="P1" style="font-size: 20px; font-style: italic; margin-top:100px;">
+            	
+            Sentences / week (normalized), dotted line is day of death<br>
+			January 1 — December 31
+            </p>
+            
+            	
+            	<!-- celebrity deaths charts code-->
+            	<div ng-controller="lineCtrl">
+            		           
+ 
+            <div class = "celebImg" style="background: url('images/davidimage3.jpg'); background-size: cover; display: inline-block"></div>
+            <div class="celebGraph"><canvas id="obituaryDavidYear" width="400" height="50"></canvas></div>
+            <div class = "celebImg" style="background: url('images/princeimage3.jpg'); background-size: cover; display: inline-block"></div>
+            <div class="celebGraph"><canvas id="obituaryPrinceYear" width="400" height="50"></canvas></div>
+            <div class = "celebImg" style="background: url('images/alanimage3.jpg'); background-size: cover; display: inline-block"></div>
+            <div class="celebGraph"><canvas id="obituaryAlanYear" width="400" height="50"></canvas></div>
+            <div class = "celebImg" style="background: url('images/mohammadimage3.jpg'); background-size: cover; display: inline-block"></div>
+            <div class="celebGraph"><canvas id="obituaryMohammadYear" width="400" height="50"></canvas></div>
+            <div class = "celebImg" style="background: url('images/fidelimage3.jpg'); background-size: cover; display: inline-block"></div>
+            <div class="celebGraph"><canvas id="obituaryFidelYear" width="400" height="50"></canvas></div>
+            <div class = "celebImg" style="background: url('images/carrieimage3.jpg'); background-size: cover; display: inline-block"></div>
+            <div class="celebGraph"><canvas id="obituaryCarrieYear" width="400" height="50"></canvas></div>
+           <div class = "celebImg" style="background: url('images/debbyimage3.jpg'); background-size: cover; display: inline-block"></div> 
+           <div class="celebGraph"><canvas id="obituaryDebbyYear" width="400" height="50"></canvas></div>
+           
+				</div>
+
+
+          </section>
+         
+
+
+          <section id="page10">
+            <section class="SeperateLinePink" id="line30"></section>
+            <section class="SeperateLineGrey" id="line31"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h1 id="chap1">Chapter 4:</h1>
+            <h2 id="chap1Sec">But hope remains.</h2>
+            <p id="P1">Look on the bright side?</p>
+          </section>   
+          
+          
+                    <section class="page7part2">
+            <section class="SeperateLinePink" id="line32"></section>
+            <section class="SeperateLineGrey" id="line33"></section>
+            <div class = "logoContainer"><a href="index.html" class="logo2"></a></div>
+            <h2 id="chap1Sec">But hope remains.</h2>
+            <section class="col-6">
+            <p id="P1">There are some rays of hope as far media coverage is concerned. Zika and Ebola were both brought under control, relatively speaking, and fittingly they received few if any mentions.
+            	</p>
+            	            	</section>
+            	
+            
+
+            	
+            	<section class="col-6">
+            <p id="P1">There are some rays of hope as far media coverage is concerned. Zika and Ebola were both brought under control, relatively speaking, and fittingly they received few if any mentions.
+            	</p>
+            	</section>
+            	<!-- zike ebola chart code-->
+            	<div ng-controller="lineCtrl">
+            		
+            		<p id="P1" style="font-size: 20px; font-style: italic; margin-top:150px;">
+            	
+            Sentences / week (normalized)<br>
+			January 1 — December 31
+            </p>
+            		           
+
+            <div class="illnessTag">Zika</div><div class="illnessGraph"><canvas id="zika" width="400" height="100"></canvas></div>
+            <div class="illnessTag">Ebola</div><div class="illnessGraph"><canvas id="ebola" width="400" height="100"></canvas></div>
+            
+				</div>
+
+
+          </section>
+          
+          
+          
+    </main>
+         <div class="clear"></div>
+    <footer>
+    </footer>
+     </div> 
+     
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/angular/angular-resource.min.js"></script>
+    <script src="js/lib/angular/angular-route.min.js"></script>
+    <script src="js/commonFirstWeek.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/controller.js"></script>
+
+		
+  </body>
+
+ </html>

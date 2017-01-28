@@ -1,0 +1,756 @@
+*{
+  margin:auto;
+  padding:0px;
+
+}
+header,nav,footer,main,section{
+  display:block;
+}
+
+.col-6 {
+	width: 50%;
+	float: left;
+	
+}
+
+.clear {
+    clear: both;
+}
+
+@font-face{
+  font-family: girls;
+  src:url(../fonts/SourceSansPro-Regular.otf);
+}
+body
+{
+    font-family: girls;
+    width: 100%;
+}
+#page1
+{
+    min-height: 800px;
+    background-image: url("../images/Introimage.png");
+    width: 100%;
+    background-size: cover;
+}
+.logo
+{
+  width:235px ;
+  height:149px;
+  background:url('../images/Logo.svg') no-repeat;
+  display:block;
+  text-align: left;
+  margin-left: 65px;
+
+}
+
+.logo2
+{
+  display:block;
+  width:127px;
+  text-align: left;
+  height:149px;
+  background:url('../images/Logosmall.svg') no-repeat;
+  margin-left: 65px;
+}
+
+.logoContainer {
+	width: 100%;
+	height:149px;
+	display:block;
+	padding-top: 50px;
+	
+}
+#line
+{
+    height:10px;
+    background-color: #ff44fe;
+  
+}
+#pageOneTitle
+{
+    color: #ffffff;
+    font-size: 29px;
+    line-height: 35px;
+    letter-spacing: -0.1px;
+    margin-top: 10px;
+    margin-left: 65px;
+    font-family: girls;
+}
+.scroll
+{
+    color: #ff44fd;
+    font-size: 21.3px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0px;
+    margin-top: 435px;
+}
+.arrow
+{
+    width: 100%;
+    height: 40px;
+	cursor: pointer;
+    margin-bottom: 20px;
+    -webkit-animation: mymove 2s infinite; 
+    animation: mymove 2s infinite;
+}
+@-webkit-keyframes mymove {
+    0%   {top: 5px;}
+    25%  {top: 5px;}
+    75%  {top: 10px}
+    100% {top: 5px;}
+}
+@keyframes mymove {
+    0%   {top: 5px;}
+    25%  {top: 5px;}
+    75%  {top: 10px}
+    100% {top: 5px;}
+}
+#page2
+{
+    min-height: 700px;
+    background-color: #19181e;
+    width: 100%;
+    background-size: cover;
+}
+#line2
+{
+   
+    width: 5%;
+    
+ 
+}
+#line3
+{
+    height:10px;
+    background-color: #625f75;
+    width: 95%;
+    float:left;
+    
+}
+#diff
+{
+    color: #ff44fd;
+}
+.page2Intro
+{
+    color: #f8e9ed;
+    margin-left: 60px;
+    margin-top: 37px;
+    float: left;
+    font-size: 26px;
+    line-height: 39px;
+    letter-spacing: -0.1px;
+    margin-bottom: 100px;
+}
+#scroll2
+{
+    color: #ff44fd;
+    font-size: 21.3px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    width:100%;
+}
+
+.page2Intro2
+{
+    color: #f8e9ed;
+    font-size: 16px;
+    margin-top: 20%;
+    margin-left:60px;
+
+	
+}
+#page3
+{
+    min-height: 800px;
+    background-image: url("../images/Depression.png");
+    background-color: #19181e;
+    width: 100%;
+    background-size: cover;
+}
+#line4
+{
+
+    width: 10%;
+
+    
+}
+#line5
+{
+ width:90%;
+}
+#chap1
+{
+    color: #ffffff;
+    line-height: 0.49px;
+    font-size: 61.3px;
+    font-family: girls;
+    margin-top: -15px;
+    margin-left: 60px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    width: 264px;
+    height: 30px;
+}
+#chap1Sec
+{
+    color: #ffffff;
+    font-size: 61.3px;
+    font-family: girls;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    font-style: normal;
+
+}
+#P1
+{
+    font-family: girls;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+#line6
+{
+
+    width: 15%;
+   
+}
+#line7
+{
+    width: 85%;
+    
+}
+#page4
+{
+    min-height: 800px;
+    background-color: #19181e;
+}
+#headLine
+{
+    color: #ffffff;
+    line-height: 0.49px;
+    font-size: 30.6px;
+    font-family: girls;
+    margin-top: -20px;
+    margin-left: 60px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0px;
+    width: 264px;
+    height: 15px;
+}
+
+#P2
+{
+    font-family: girls;
+    font-size: 19px;
+    color: #ffffff;
+    margin-left: 60px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+#side
+{
+    font-family: girls;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    margin-right: 250px;
+    margin-top: 230px;
+}
+#P3
+{
+    font-family: girls;
+    font-size: 19px;
+    color: #635f75;
+    margin-left: 60px;
+    margin-top: 30px;
+    font-weight: normal;
+    font-style: normal;
+}
+#page5
+{
+   min-height: 920px;
+    background-color: #19181e;
+}
+#line8
+{
+    width: 20%;
+    
+}
+#line9
+{
+    height:10px;
+    background-color: #625f75; 
+    width: 80%;
+    float: left;
+    
+}
+#headLine1
+{
+     color: #ffffff;
+    line-height: 0.49px;
+    font-size: 30.6px;
+    font-family: girls;
+    margin-top: 50px;
+    margin-left: 60px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0px;
+    width: 264px;
+    height: 15px;   
+}
+#side1
+{
+    font-family: girls;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    margin-right: 250px;
+    margin-top: 100px;   
+}
+#P4
+{
+    font-family: girls;
+    font-size: 19px;
+    color: #ffffff;
+    margin-left: 60px;
+    margin-top: 30px;
+    font-weight: normal;
+    font-style: normal;
+}
+#page6
+{
+    min-height: 800px;
+    background-color: #19181e;
+}
+#side2
+{
+     font-family: girls;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    margin-right: 250px;
+    margin-top: 100px;    
+}
+#line10
+{
+
+    width: 25%;
+
+   
+}
+#line11
+{
+
+    width:75%;
+
+    
+}
+#page7
+{
+    min-height: 1000px;
+    background-image: url("../images/Syriabombing.png");
+    background-color: #19181e;
+    background-size: cover;
+    width: 100%;
+}
+#line12
+{
+    width: 30%;
+    
+}
+.firstrow
+{
+    color: #ffffff;
+}
+.line1
+{
+    font-family: girls;
+    font-size: 30px;
+    color: #f8e9ed;
+    position: relative;
+    margin-right: 20px;
+
+}
+.line2
+{
+    font-size: 30px;
+    color: #f8e9ed;
+    position: relative;
+    margin-right: 20px;
+
+}
+.line3
+{
+    font-size: 25px;
+    color: #f8e9ed;
+    position: relative;
+    margin-right: 20px;
+}
+.line4
+{
+    font-size: 20px;
+    color: #f8e9ed;
+    position: relative;
+    margin-right: 20px;
+   
+}
+.line5
+{
+    font-size: 17px;
+    color: #f8e9ed;
+    position: relative;
+    margin-right: 20px;
+    
+}
+.line6
+{
+    font-size: 15px;
+    color: #f8e9ed;
+    position: relative;
+    margin-right: 20px;
+    
+}
+.line7
+{
+    font-size: 15px;
+    color: #f8e9ed;
+    position: relative;
+    margin-right: 20px;
+    
+}
+.line8
+{
+    font-size: 13px;
+    color: #f8e9ed;
+    position: relative;
+    margin-right: 20px;
+    
+}
+.line9
+{
+    font-size: 10px;
+    color: #f8e9ed;
+    position: relative;
+    margin-right: 20px;
+}
+
+.year1
+{
+    font-size: 30px;
+    color: #f8e9ed;
+    margin-right: 20px;
+    
+}
+.year2
+{
+    font-size: 25px;
+    color: #f8e9ed;
+    margin-right: 20px;
+}
+.year3
+{
+    font-size: 20px;
+    color: #f8e9ed;
+    margin-right: 20px;
+}
+.year4
+{
+    font-size: 17px;
+    color: #f8e9ed;
+    margin-right: 20px;
+}
+.year5
+{
+    font-size: 15px;
+    color: #f8e9ed;
+    margin-right: 20px;
+}
+.year6
+{
+    font-size: 13px;
+    color: #f8e9ed;
+    margin-right: 20px;
+}
+#page8
+{
+    min-height: 1000px;
+    background-image: url("../images/Crowd.png");
+    background-color: #19181e;
+    background-size: cover;
+    width: 100%;
+}
+#line13
+{
+    width: 70%;
+    
+}
+#page9
+{
+    height: 1000px;
+    background-color: #19181e;
+}
+.s1
+{
+    font-family: girls;
+    font-size: 30px;
+    color: #f8e9ed;
+    position: relative;
+
+}
+.s2
+{
+    font-size: 30px;
+    color: #f8e9ed;
+    position: relative;
+
+}
+.s3
+{
+    font-size: 25px;
+    color: #f8e9ed;
+    position: relative;
+}
+.s4
+{
+    font-size: 20px;
+    color: #f8e9ed;
+    position: relative;
+}
+.s5
+{
+    font-size: 17px;
+    color: #f8e9ed;
+    position: relative;
+}
+.s6
+{
+    font-size: 15px;
+    color: #f8e9ed;
+    position: relative;
+}
+.s7
+{
+    font-size: 15px;
+    color: #f8e9ed;
+    position: relative;
+}
+.s8
+{
+    font-size: 13px;
+    color: #f8e9ed;
+    position: relative;
+}
+#page10
+{
+    height: 887px;
+    background-image: url("../images/party.png");
+    background-color: #19181e;
+}
+#line14
+{
+width: 35%;
+}
+
+#line15
+{
+width: 65%;
+}
+
+#line16
+{
+width: 40%;
+}
+
+#line17
+{
+width: 60%; 
+}
+
+#line18
+{
+width: 45%;
+}
+
+#line19
+{
+width: 55%;
+}
+
+#line20
+{
+width: 50%;
+}
+
+#line21
+{
+width: 50%;
+}
+
+#line22
+{
+width: 55% ;
+}
+
+#line23
+{
+width: 45%;
+}
+
+#line24
+{
+width: 60%;
+}
+
+#line25
+{
+width: 40%;
+}
+
+#line26
+{
+width: 65%;
+}
+
+#line27
+{
+width: 35%;
+}
+
+#line28
+{
+width: 70%;
+}
+
+#line29
+{
+width: 30%;
+}
+#line30
+{
+width: 80%;
+}
+
+#line31
+{
+width: 20%;
+}
+
+#line32 {
+	width: 90%;
+}
+
+#line33 {
+	width:10%;
+}
+
+.SeperateLinePink {
+	height:10px;
+    background-color: #ff44fe;
+    float:left;
+}
+
+.SeperateLineGrey {
+	height:10px;
+    background-color: #625f75;
+    float:left;
+}
+
+
+.page7part2{
+	background :#19181E;
+}
+
+.pink {
+	color: pink;
+}
+
+.celebImg {
+	width: 15%;
+	height: 113px;
+	
+}
+
+.celebGraph {
+	width:82%; 
+	display: inline-block;
+}
+
+.illnessTag {
+	width: 10%;
+	height: 113px;
+	color: #ffffff;
+	display: inline-block;
+	line-height: 113px;
+	margin-left: 5%;
+	font-size: 24px;
+	
+}
+
+.illnessGraph {
+	width: 80%;
+    display: inline-block;
+    
+	
+}
+
+
+@media screen and (max-width:750px) {
+		
+	
+.col-6 {
+	width: 100%;
+
+}
+
+.wordCloud {
+	margin-left : 60px;
+	margin-top: 60px;
+}
+
+.page2Intro2 {
+	margin-top:10%;
+	margin-bottom:10%;
+	
+}
+
+.celebImg  {
+	width:100%;
+}
+
+.celebGraph {
+	width:100%;
+}
+
+.illnessTag {
+
+	
+}
+
+.illnessGraph {
+	width:100%;
+}
+
+#side {
+	margin-left: 60px;
+}
+#side1 {
+	margin-left: 60px;
+}
+#side2 {
+	margin-left: 60px;
+}
+}
