@@ -285,7 +285,7 @@ body
 }
 #page5
 {
-   min-height: 1240px;
+   min-height: 1000px;
     background-color: #19181e;
 }
 #line8
@@ -337,7 +337,7 @@ body
 }
 #page6
 {
-    min-height: 1124px;
+    min-height: 1000px;
     height: auto;
     background-color: #19181e;
 }
@@ -389,6 +389,7 @@ body
     font-size: 30px;
     color: #f8e9ed;
     position: relative;
+    margin-right:20px;
     
 
 }
@@ -397,7 +398,8 @@ body
     font-size: 30px;
     color: #f8e9ed;
     position: relative;
-    margin-right: 20px;
+    margin-right:20px;
+
 
 }
 .line3
@@ -405,14 +407,16 @@ body
     font-size: 25px;
     color: #f8e9ed;
     position: relative;
-    margin-right: 20px;
+    margin-right:20px;
+
 }
 .line4
 {
     font-size: 20px;
     color: #f8e9ed;
     position: relative;
-    margin-right: 20px;
+    margin-right:20px;
+
    
 }
 .line5
@@ -420,7 +424,8 @@ body
     font-size: 17px;
     color: #f8e9ed;
     position: relative;
-    margin-right: 20px;
+    margin-right:20px;
+
     
 }
 .line6
@@ -428,7 +433,8 @@ body
     font-size: 15px;
     color: #f8e9ed;
     position: relative;
-    margin-right: 20px;
+    margin-right:20px;
+
     
 }
 .line7
@@ -436,7 +442,8 @@ body
     font-size: 15px;
     color: #f8e9ed;
     position: relative;
-    margin-right: 20px;
+    margin-right:20px;
+
     
 }
 .line8
@@ -444,7 +451,8 @@ body
     font-size: 13px;
     color: #f8e9ed;
     position: relative;
-    margin-right: 20px;
+    margin-right:20px;
+
     
 }
 .line9
@@ -452,45 +460,52 @@ body
     font-size: 10px;
     color: #f8e9ed;
     position: relative;
-    margin-right: 20px;
+    margin-right:20px;
+
 }
 
 .year1
 {
     font-size: 30px;
     color: #f8e9ed;
-    margin-right: 20px;
+    margin-right:20px;
+
     
 }
 .year2
 {
     font-size: 25px;
     color: #f8e9ed;
-    margin-right: 20px;
+    margin-right:20px;
+
 }
 .year3
 {
     font-size: 20px;
     color: #f8e9ed;
-    margin-right: 20px;
+    margin-right:20px;
+
 }
 .year4
 {
     font-size: 17px;
     color: #f8e9ed;
-    margin-right: 20px;
+    margin-right:20px;
+
 }
 .year5
 {
     font-size: 15px;
     color: #f8e9ed;
-    margin-right: 20px;
+    margin-right:20px;
+
 }
 .year6
 {
     font-size: 13px;
     color: #f8e9ed;
-    margin-right: 20px;
+    margin-right:20px;
+
 }
 #page8
 {
@@ -508,7 +523,7 @@ body
 }
 #page9
 {
-    min-height: 1024px;
+    min-height: 1000px;
     height: auto;
     background-color: #19181e;
 }
@@ -565,7 +580,7 @@ body
 }
 #page10
 {
-    height: 887px;
+    height: 1000px;
     background-image: url("../images/party.png");
     background-color: #19181e;
 }
