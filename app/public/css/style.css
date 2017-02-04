@@ -25,6 +25,7 @@ body
 {
     font-family: girls;
     width: 100%;
+    overflow-x: hidden;
 }
 #page1
 {
@@ -707,6 +708,8 @@ width: 20%;
 .celebImg {
 	width: 15%;
 	height: 113px;
+	background-size: 100% 100% !important; 
+	display: inline-block;
 	
 }
 
@@ -733,6 +736,57 @@ width: 20%;
 	
 }
 
+.timeLine {
+color: #ffffff; 
+width: 100%;
+}
+
+.timeLineMonth {
+	width: 14%; 
+	display: inline-block; 
+	text-align: center;
+}
+
+.legendPink {
+	margin-left: 60px; 
+	color: #ff44fd;
+}
+
+.legendBlue {
+	margin-left: 60px; 
+	color: #4ec1ff;
+}
+
+.celebName {
+	color: #ffffff; 
+	font-size: 24px; 
+	font-weight: bold; 
+	margin-top: 73px; 
+	margin-left: 5px;
+}
+
+.datesSampled {
+	font-size: 20px; 
+	font-style: italic; 
+	margin-top:150px;
+}
+
+.datesSampledLeft {
+	font-size: 20px; 
+	font-style: italic; 
+	margin-top:100px; 
+	margin-bottom: 20px;
+}
+
+.datesSampledRight {
+	margin-left: 60px; 
+	margin-top: 200px; 
+	margin-bottom: 20px
+}
+
+.fadedText {
+	color: #635f75 !important;
+} 
 
 @media screen and (max-width:750px) {
 		
